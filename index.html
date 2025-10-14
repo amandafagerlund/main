@@ -18,7 +18,8 @@
                 <span class="name">Amanda Fagerlund</span>
             </div>
 
-
+ <div class="burger" onclick="toggleMenu()">☰</div>
+            
             <!-- En klass för huvudmenyn inklusive 2 klickbara länkar. -->
             <nav class="menu">
                 <ul>
@@ -128,7 +129,12 @@
         <br>
         <br>
 
-
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+  }
+</script>
         <!-- Skapar en div-klass för en banner. 
         <div class="banner">
             <h1>Vad kan jag erbjuda ditt företag?</h1>
@@ -168,3 +174,4 @@
 
 
 </html>
+
