@@ -402,6 +402,36 @@ ul {
     gap: 10px;
 }
 
+.burger {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        width: 100%;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        background-color: #1e1e1d;
+        padding: 10px 0;
+    }
+}
 
 /* Gör sidan responsiv genom att anpassa layouten för varje element efter skärmens storlek. */
 @media (max-width: 900px) {
@@ -464,3 +494,4 @@ ul {
 
 
 }
+
