@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <!-- Skapar en wrapper för att kunna styla innehållet med css. -->
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">
+                <img src="images/logot1.jfif" alt="AFDEV logotyp">
+                <span class="name">Amanda Fagerlund</span>
+            </div>
+
+
+            <!-- En klass för huvudmenyn inklusive 2 klickbara länkar. -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT ME</a></li>
+                    <li><a href="#">QUALIFICATIONS</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+
+
+            <!-- Skapade ett textfält för att kunna visa en språkhanterare för att öka tillgängligheten. -->
+            <div class="lang">
+                <input type="text" placeholder="SV ▼">
+            </div>
+
+
+            <!-- En klass med en sökruta utan fuktion, bara för design. -->
+            <div class="search">
+                <input type="text" placeholder="Search...">
+            </div>
+        </header>
+
+
+        <!-- Skapar en main-sektion med en presentation samt profilbild. -->
+        <main class="main-sections">
+            <section class="intro-section">
+                <div class="profile-image">
+                    <img src="images/pfp25.jfif" alt="Bild på Amanda Fagerlund">
+                </div>
+                <div class="intro-text">
+                    <h1>Hello ♡</h1>
+                    <p>My name is Amanda Fagerlund, and I’m a junior web developer student with skills in HTML, CSS,
+                        JavaScript,
+                        PHP, C#,
+                        graphic design, UX design, and alot more. I’m based in the beautiful city of Karlstad, just
+                        a short distance from Örebro and Västerås. As a student, I’m currently offering simple web
+                        development and design tasks free of charge to gain experience and build my portfolio.
+
+                        By choosing to work with me, you’ll get to know a creative and solution-oriented developer with
+                        a strong focus on user-friendly design and efficient layouts. <br> Just send me an email and
+                        we'll
+                        take it from there. <br> (Ps. This site is currently under construction).
+
+                        <br> <br>Looking forward to hearing from you!
+                    </p>
+                    <a href="#" class="cta-button" onclick="openPopup()">Contact me ✉</a>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Popup-rutan -->
+        <div id="popup" class="popup-overlay">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <h2>Contact me here ✉</h2>
+                <p>Email: <a href="#">amandafagerlund@hotmail.com</a></p>
+            </div>
+        </div>
+
+        <script>
+            function openPopup() {
+                document.getElementById('popup').style.display = 'block';
+            }
+
+            function closePopup() {
+                document.getElementById('popup').style.display = 'none';
+            }
+        </script>
+
+
+        <!-- En service-sektion för att visa vilka områden jag arbetar med. -->
+        <section class="services-section">
+            <h2 class="services-title">I'm happy to help you with:</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>App/Web development</h3>
+                    <p>I have experience in building websites and apps using HTML, CSS, JavaScript, PHP, C# etc.
+                        If you've got a smaller project for me — feel free to get in touch today and let’s discuss how I
+                        can help you.
+                    </p>
+                    <a>Read more about my skills in Web development.</a>
+                </div>
+                <div class="service-card">
+                    <h3>UX Design and Accessibility</h3>
+                    <p>Do you need to improve the user experience on your website? Accessibility is something I’m
+                        passionate about, and I’m happy to help your company reach a wider audience.
+
+                    </p>
+                    <a>Read more about my skills in UX-design och Accessibility.</a>
+                </div>
+                <div class="service-card">
+                    <h3>Graphic Design and Logo</h3>
+                    <p>My goal is to create user-friendly and efficient websites with a strong focus on responsiveness
+                        and accessibility.
+                        I also have an interest in digital painting and would be happy to help you create a personalized
+                        logo.
+                    </p>
+                    <a href="#">Read more about my skills in Graphic design och Digital painting.</a>
+                </div>
+
+            </div>
+        </section>
+
+        <br>
+        <br>
+
+
+        <!-- Skapar en div-klass för en banner. 
+        <div class="banner">
+            <h1>Vad kan jag erbjuda ditt företag?</h1>
+            <div class="banner-image">
+                <img src="images/videoafdev.jpg" alt="Bild på play knapp för video">
+            </div>
+            <h2>Tryck på ikonen till höger i videon för att aktivera textning.</h2>
+        </div> -->
+
+
+        <!-- Footer med tre sektioner innehållandes information och länkar. -->
+        <footer class="footer">
+            <div class="footer-contact">
+                <p>Amanda Fagerlund</p>
+                <p>Adress 10</p>
+                <p>Karlstad, 65222</p>
+            </div>
+
+
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#"><u>FAQ </u></a></li>
+                    <li><a href="#"><u>Privacy policy</u></a></li>
+                    <li><a href="#"><u>Terms and Conditions</u></a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-title">
+                <q><em>AF</em></q>
+                <p><strong>Created by Amanda Fagerlund © 2025</strong></p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

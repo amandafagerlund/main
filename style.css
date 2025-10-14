@@ -1,0 +1,465 @@
+/* Deklarerar typsnittet Josefin sans som hämtas från fonts-mappen. */
+@font-face {
+    font-family: 'Josefin sans';
+    src: url('fonts/josefinsans-semibold-webfont.woff') format('woff'),
+        url('fonts/josefinsans-semibold-webfont.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+/* CSS-reset för att nollställa inställningarna för storlek, margin, padding och typsnitt. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popup-content {
+    background: white;
+    color: #000000;
+    padding: 20px;
+    width: 300px;
+    margin: 100px auto;
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* Styling för innehållet i bodyn med färg och utseende. */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #1e1e1d;
+    color: rgb(249, 233, 233);
+    line-height: 1.6;
+}
+
+
+/* Styling för wrappern. */
+.wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* Stil och utseende för all text på sidan. */
+h1,
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+
+/* Utseende och placering för headern med en gradient-färg. */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to top, #000000, #2d2d2d);
+    padding: 0 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+
+}
+
+
+/* Storlek och placering för loggan. */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+.logo img {
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+    margin-top: 5px;
+
+}
+
+
+/* Stil och utseende för webbsidans titel. */
+.name {
+    font-family: 'Josefin sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Utseende och placering för länkarna i huvudmenyn. */
+.menu ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+
+.menu ul li a {
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+
+.menu ul li a:hover {
+    background-color: #29251c;
+    color: white;
+}
+
+
+.menu ul li a:active {
+    color: #ffc107;
+}
+
+
+.lang input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70px;
+}
+
+/* Utseende och storlek för sökrutan. */
+.search input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+/* Styling för introduktionen på startsidan. */
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    gap: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+}
+
+
+/* Storlek och utseende för profilbilden. */
+.profile-image img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border: 3px solid #ccc;
+
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Styling och storlek för introduktionstexten. */
+.intro-text {
+    max-width: 600px;
+}
+
+.intro-text h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #5a5a5a;
+}
+
+.intro-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #acaaaa;
+}
+
+
+/* Storlek och utseende för knappen på startsidan. */
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #554b3b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #29251c;
+}
+
+
+/* Storlek och placering för service-sektionerna. */
+.services-section {
+    margin: 10px auto;
+    padding: 20px;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.services-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #a5a1a1;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.service-card {
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    background-color: #3a3a3a;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #afedf0;
+}
+
+.service-card p {
+    color: #ddd;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+/* Storlek och placering för bilderna i service-sektionen. */
+.services-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+
+/* Utseende och placering för bannern. */
+.banner {
+    background-color: #2d2d2d;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+
+/* Styling för rubriken som visas på bannern. */
+.banner h1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Styling för texten som visas på bannern. */
+.banner h2 {
+    font-size: 1rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Storlek och placering för bilden i bannern. */
+.banner-image img {
+
+    width: 900px;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+
+/* Storlek och placering för meriterna. */
+.merit-sections {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+/* Placering åt höger resp. vänster. */
+.left-section,
+.right-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+
+/* Storlek och utseende för bilderna i varje sektion genom att använda en gemensam klass. */
+.section-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+    margin: 0 auto;
+    display: block;
+    border: 3px solid #ccc;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* Använder grid för alla delarna i footern. */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "contact links title";
+    background: linear-gradient(to top, #000000, #2d2d2d);
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+
+
+/* Placering för delarna i footern. */
+.footer-contact,
+.footer-links,
+.footer-title {
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+
+/* Styling för länkarna i footern. */
+.footer-links ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* Gör sidan responsiv genom att anpassa layouten för varje element efter skärmens storlek. */
+@media (max-width: 900px) {
+    .main-sections {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "contact"
+            "links"
+            "slogan";
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    .video {
+        width: 90%;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .search {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .video {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+
+}
