@@ -1,8 +1,8 @@
 /* Deklarerar typsnittet Josefin sans som hämtas från fonts-mappen. */
 @font-face {
     font-family: 'Josefin sans';
-    src: url('fonts/josefinsans-semibold-webfont.woff') format('woff'),
-        url('fonts/josefinsans-semibold-webfont.woff2') format('woff2');
+    src: url('josefinsans-semibold-webfont.woff') format('woff'),
+        url('josefinsans-semibold-webfont.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
 }
@@ -460,6 +460,7 @@ ul {
         width: 100%;
         padding: 0 10px;
     }
+
 
 
 }
