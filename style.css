@@ -484,6 +484,7 @@ ul {
     .search {
         margin-top: 20px;
         width: 100%;
+         padding-bottom: 40px;
     }
 
     .video {
@@ -498,5 +499,6 @@ ul {
 
 
 }
+
 
 
