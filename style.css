@@ -491,7 +491,12 @@ ul {
         padding: 0 10px;
     }
 
+    .footer {
+    display: none;
+}
+
 
 
 }
+
 
