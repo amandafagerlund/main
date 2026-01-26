@@ -169,10 +169,10 @@ a {
 
 /* Utseende och storlek för sökrutan. */
 .search input {
-    padding: 4px 8px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 150px;
+    width: 200px;
 }
 
 /* Styling för introduktionen på startsidan. */
@@ -454,6 +454,7 @@ ul {
         display: none;
     } */
 }
+
 
 
 
