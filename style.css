@@ -401,32 +401,59 @@ ul {
     padding: 10px;
 }
 
-@media (max-width: 768px) {
-    .burger {
-        display: block;
-    }
-
-    .menu {
-        display: none;
-        width: 100%;
-    }
-
-    .menu.active {
-        display: block;
+@media (max-width: 900px) {
+    .main-sections {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .menu ul {
         flex-direction: column;
         gap: 10px;
-        align-items: center;
-        background-color: #1e1e1d;
-        padding: 10px 0;
+    }
+
+    .search {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    .video {
+        width: 90%;
     }
 }
 
-/* Gör sidan responsiv genom att anpassa layouten för varje element efter skärmens storlek. */ @media (max-width: 900px) { .main-sections { grid-template-columns: repeat(3, 1fr); } .footer { grid-template-columns: 1fr; grid-template-areas: "contact" "links" "slogan"; } .menu ul { flex-direction: column; gap: 10px; } .search { margin-top: 20px; width: 100%; } .search input { width: 100%; } .video { width: 90%; } } @media (max-width: 500px) { .header { flex-direction: column; align-items: center; } .menu ul { flex-direction: column; gap: 10px; width: 100%; align-items: center; } .search { margin-top: 20px; width: 100%; padding-bottom: 40px; } .video { width: 100%; padding: 0 10px; } .footer { display: none; } }
+@media (max-width: 500px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+    }
 
+    .search {
+        margin-top: 20px;
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .video {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    /* Ta bort display:none om du vill behålla footern */
+    /* .footer {
+        display: none;
+    } */
+}
 
 
 
