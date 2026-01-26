@@ -373,35 +373,25 @@ ul {
 
 
 
-/* Använder grid för alla delarna i footern. */
 .footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-        "contact links title";
-    background: linear-gradient(to top,  #1e1e1d, #615c50);
-    color: #ffffff;
-    border-radius: 8px;
-}
-
-
-
-/* Placering för delarna i footern. */
-.footer-contact,
-.footer-links,
-.footer-title {
-    margin-bottom: 10px;
-    margin-left: 50px;
-}
-
-
-/* Styling för länkarna i footern. */
-.footer-links ul {
-    list-style-type: none;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: center; 
+    align-items: center;    
+    text-align: center;
+    padding: 20px;
 }
+
+.footer-title q {
+    font-size: 24px;
+}
+
+.footer-title p {
+    margin: 5px 0 0;
+}
+
+
+
+
 
 .burger {
     display: none;
@@ -440,13 +430,14 @@ ul {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .footer {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "contact"
-            "links"
-            "slogan";
+       .footer {
+        padding: 15px;
     }
+
+    .footer-title q {
+        font-size: 20px;
+    }
+}
 
     .menu ul {
         flex-direction: column;
@@ -494,12 +485,22 @@ ul {
     }
 
     .footer {
-    display: none;
+        padding: 10px;
+    }
+
+    .footer-title q {
+        font-size: 18px;
+    }
+
+    .footer-title p {
+        font-size: 12px;
+    }
 }
 
 
 
 }
+
 
 
 
