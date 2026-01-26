@@ -430,13 +430,9 @@ ul {
         grid-template-columns: repeat(3, 1fr);
     }
 
-       .footer {
-        padding: 15px;
-    }
-
-    .footer-title q {
-        font-size: 20px;
-    }
+     .footer {
+    display: none;
+}
 }
 
     .menu ul {
@@ -484,22 +480,15 @@ ul {
         padding: 0 10px;
     }
 
-    .footer {
-        padding: 10px;
-    }
-
-    .footer-title q {
-        font-size: 18px;
-    }
-
-    .footer-title p {
-        font-size: 12px;
-    }
+  .footer {
+    display: none;
+}
 }
 
 
 
 }
+
 
 
 
