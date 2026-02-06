@@ -61,6 +61,7 @@ body {
     background-color: #1e1e1d;
     color: rgb(249, 233, 233);
     line-height: 1.6;
+    text-align: center;
 }
 
 
@@ -84,6 +85,8 @@ h2 {
 p {
     margin-bottom: 1rem;
     line-height: 1.6;
+    
+
 }
 
 
@@ -484,6 +487,7 @@ ul {
         padding: 0 10px;
     }
 }
+
 
 
 
